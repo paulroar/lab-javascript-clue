@@ -129,9 +129,9 @@ function pickMystery() {
 
 function revealMystery() {
 
-    const mystery = pickMystery();
-    
-    return `"${mystery.suspect.firstName} ${mystery.suspect.lastName} killed Mr. Boddy using the ${mystery.weapon.name} in the ${mystery.room.name}!"`;
+    const charade = pickMystery();
+
+    return `"${charade.suspect.firstName} ${charade.suspect.lastName} killed Mr. Boddy using the ${charade.weapon.name} in the ${charade.room.name}!"`;
 
 }
 console.log(revealMystery());
